@@ -1,0 +1,337 @@
+.trade-panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.trade-panel__title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.trade-tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 1rem;
+}
+
+.trade-tabs__btn {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all var(--transition);
+}
+
+.trade-tabs__btn:first-child {
+  border-radius: var(--radius) 0 0 var(--radius);
+}
+
+.trade-tabs__btn:last-child {
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.trade-tabs__btn--active-buy {
+  background: var(--positive);
+  border-color: var(--positive);
+  color: #fff;
+}
+
+.trade-tabs__btn--active-sell {
+  background: var(--negative);
+  border-color: var(--negative);
+  color: #fff;
+}
+
+.trade-form__group {
+  margin-bottom: 1rem;
+}
+
+.trade-form__label {
+  display: block;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.375rem;
+}
+
+.trade-form__input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  font-size: 0.9375rem;
+  outline: none;
+}
+
+.trade-form__input:focus {
+  border-color: var(--accent);
+}
+
+.trade-form__summary {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--border);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.trade-form__summary strong {
+  color: var(--text-primary);
+}
+
+.trade-form__btn {
+  width: 100%;
+  padding: 0.625rem;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #fff;
+  transition: opacity var(--transition);
+}
+
+.trade-form__btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.trade-form__btn--buy {
+  background: var(--positive);
+}
+
+.trade-form__btn--sell {
+  background: var(--negative);
+}
+
+.trade-form__msg {
+  margin-top: 0.75rem;
+  padding: 0.625rem;
+  border-radius: var(--radius);
+  font-size: 0.8125rem;
+  text-align: center;
+}
+
+.trade-form__msg--success {
+  background: rgba(34, 197, 94, 0.1);
+  color: var(--positive);
+}
+
+.trade-form__msg--error {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--negative);
+}
+
+.kyc-gate {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.kyc-gate p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.kyc-gate__link {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Portfolio page */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.balance-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.balance-card__amount {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.balance-card__label {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+}
+
+.deposit-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.deposit-form input {
+  width: 120px;
+  padding: 0.5rem 0.75rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+}
+
+.deposit-form button {
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.holdings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.holdings-table th {
+  text-align: left;
+  padding: 0.75rem;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
+  font-weight: 500;
+}
+
+.holdings-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.holdings-table tr:hover td {
+  background: var(--bg-card-hover);
+}
+
+.section-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  overflow-x: auto;
+}
+
+/* Transactions page */
+.tx-badge {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.tx-badge--buy {
+  background: rgba(34, 197, 94, 0.15);
+  color: var(--positive);
+}
+
+.tx-badge--sell {
+  background: rgba(239, 68, 68, 0.15);
+  color: var(--negative);
+}
+
+/* KYC page */
+.kyc-form {
+  max-width: 500px;
+}
+
+.kyc-form__group {
+  margin-bottom: 1.25rem;
+}
+
+.kyc-form__label {
+  display: block;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.375rem;
+}
+
+.kyc-form__input {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  font-size: 0.9375rem;
+}
+
+.kyc-form__input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.kyc-form__btn {
+  padding: 0.625rem 1.5rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.kyc-form__btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.kyc-done {
+  color: var(--positive);
+  font-size: 0.9375rem;
+}
+
+/* Nav */
+.nav-links {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  transition: color var(--transition);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--text-primary);
+}

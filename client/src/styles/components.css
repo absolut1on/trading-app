@@ -1,0 +1,60 @@
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.spinner__circle {
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.market-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.market-status__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.market-status__dot--open {
+  background: var(--positive);
+  box-shadow: 0 0 6px var(--positive);
+}
+
+.market-status__dot--closed {
+  background: var(--negative);
+}
+
+.market-status__label {
+  font-weight: 500;
+}
+
+.market-status__label--open {
+  color: var(--positive);
+}
+
+.market-status__label--closed {
+  color: var(--negative);
+}
+
+.market-status__next {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
